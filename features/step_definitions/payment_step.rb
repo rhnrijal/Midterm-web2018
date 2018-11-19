@@ -32,7 +32,8 @@ When("I click the {string} link") do |string|
 end
 
 Then("I should see a new account form") do
-  expect(page).to have_css('form input#account_number')
+  #expect(page).to have_css('form input#account_number')
+  expect(page).to have_content "New Account"
 end
 
 When("I fill in the account data") do
